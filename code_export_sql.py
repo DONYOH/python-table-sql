@@ -2,7 +2,7 @@ import pandas as pd
 import os
 # Demander à l'utilisateur le chemin du fichier Excel
 excel_file = input("Entrez le chemin complet de votre fichier Excel : ")
-sheet_name = "Tous les entreprises"
+sheet_name = "Ma Feuille"
 table_name = input("Entrez le nom de la table SQL à créer : ")
 
 # Si l'utilisateur ne met pas de nom de feuille, prendre la première
@@ -37,3 +37,4 @@ with open(sql_file, 'w', encoding='utf-8') as f:
     f.write(insert_sql)
 
 print("Fichier créé ici :", os.path.abspath(sql_file))
+
